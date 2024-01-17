@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제 사이트</title>
+    <style>
+        .wrapper {
+            width: 1024px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .header{
+            overflow: hidden;
+            text-align: center;
+            background-color: rgb(36, 36, 204);
+        }
+
+        .header2{
+            background-color: rgb(104, 146, 19);
+            border: 2px solid rgb(104, 146, 19);
+        }
+
+        .middle {
+            height: 400px;
+        }
+
+        .middle table {
+            margin-left: 20px;
+        }
+
+        .middle img {
+            float: right;
+            margin-top: -150px; 
+        }
+
+        .logo{
+            height: 150px;
+            text-align: center;
+        }
+
+        .nav > ul > li {
+            display: inline-block;
+            width: 180px;
+            text-align: center;
+        }
+
+        .nav > ul > li > a {
+            color: white;
+            font: bolder;
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+            font-size: 24px;
+            padding-top: 30px;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            padding-bottom: 10px;
+        }
+
+        .footer {
+            height: 40px;
+            background-color: rgb(104, 146, 19);
+            text-align: center;
+        }
+
+        address{
+            color: white;
+            padding-top: 10px;
+        }
+
+        address > span{
+            color: red;
+        }
+
+
+        #notice{
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        #manager{
+            color: black;
+            text-align: left;
+            padding-left: 20px;
+            font-weight: lighter;
+        }
+
+        #sample{
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        #NOTICE{
+            color: orange;
+        }
+
+        #text{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="logo">
+                <h3>웹페이지 디자인 연구소</h3>
+                <p>school of web</p>
+            </div>
+        </div>
+        
+        <div class="header2">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PEOPLE</a></li>
+                    <li><a href="#">CLASS</a></li>
+                    <li><a href="#" id="NOTICE">NOTICE</a></li>
+                    <li><a href="#">PICTURE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="middle">
+            <p id="notice">공지사항 & 뉴스</p>
+            <p id="manager">2024.01.28 by 관리자</p>
+            <p id="sample">샘플게시판</p>
+
+            <img src="/images/realmadrid.png" alt="레알로고" width="250" height="250">
+
+            <table border="1" width="700">
+                <tr>
+                    <th bgcolor="gray">번호</th>
+                    <th bgcolor="gray" width="180">제목</th>
+                    <th bgcolor="gray">작성자</th>
+                    <th bgcolor="gray" width="100">날짜</th>
+                    <th bgcolor="gray">조회수</th>
+                    <th bgcolor="gray">댓글수</th>
+                </tr>
+
+                <tr>
+                    <td>165</td>
+                    <td id="text">새 스티커 상품 출시</td>
+                    <td>admin</td>
+                    <td>2024.01.28</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>166</td>
+                    <td id="text">입문자 위한 안내</td>
+                    <td>admin</td>
+                    <td>2024.02.01</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>167</td>
+                    <td id="text">웹사이트 개발 도구 소개</td>
+                    <td>admin</td>
+                    <td>2024.02.04</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>168</td>
+                    <td id="text">안녕하세요</td>
+                    <td>admin</td>
+                    <td>2024.02.09</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>169</td>
+                    <td id="text">게시판을 오픈했습니다</td>
+                    <td>admin</td>
+                    <td>2024.02.16</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <address>Copywriter @2023 <span>Dragon Belt</span></address>
+        </div>
+    </div>    
+</body>
+</html>
